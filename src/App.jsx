@@ -37,7 +37,7 @@ export default function App() {
       {/* Card */}
       <div className="z-10 backdrop-blur-lg bg-white/10 border border-rose-400/30 p-10 rounded-3xl shadow-2xl text-center max-w-md w-full">
         <h1 className="text-4xl text-start font-serif tracking-wide text-rose-400 mb-4">
-          Jovelina ,
+          Jovelina,
         </h1>
 
         <p className="text-gray-300 mb-6 italic">

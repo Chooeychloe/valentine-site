@@ -17,7 +17,7 @@ export default function App() {
 
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) =>
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1,
       );
     }, 3000); // change slide every 3 seconds
 
@@ -26,7 +26,6 @@ export default function App() {
 
   return (
     <div className="relative min-h-screen overflow-hidden flex items-center justify-center bg-gradient-to-br from-black via-rose-950 to-black text-white">
-
       {/* Floating Hearts (keep your CSS hearts) */}
       <div className="heart">♥</div>
       <div className="heart">♥</div>
@@ -37,9 +36,8 @@ export default function App() {
 
       {/* Card */}
       <div className="z-10 backdrop-blur-lg bg-white/10 border border-rose-400/30 p-10 rounded-3xl shadow-2xl text-center max-w-md w-full">
-
-        <h1 className="text-4xl font-serif tracking-wide text-rose-400 mb-4">
-          Joveina
+        <h1 className="text-4xl text-start font-serif tracking-wide text-rose-400 mb-4">
+          Jovelina ,
         </h1>
 
         <p className="text-gray-300 mb-6 italic">
@@ -75,7 +73,13 @@ export default function App() {
             </div>
           </div>
         )}
-
+        {/* Signature */}
+        <div className="mt-8 text-left">
+          <p className="text-rose-400 italic text-lg text-start">Yours,</p>
+          <p className="text-rose-300 font-serif text-2xl tracking-wide">
+            Dandan ❤️
+          </p>
+        </div>
       </div>
     </div>
   );
